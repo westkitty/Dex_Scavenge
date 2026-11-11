@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "project": "Dex//Scavenge",
+  "specimens": [
+    {
+      "id": "001",
+      "name": "Veloren",
+      "source": "https://gitlab.com/veloren/veloren",
+      "commit": null,
+      "status": "candidate"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "OSEE-PAT-001",
+      "name": "Background world simulation",
+      "status": "hypothesis"
+    },
+    {
+      "id": "OSEE-PAT-002",
+      "name": "ECS organization",
+      "status": "hypothesis"
+    },
+    {
+      "id": "OSEE-PAT-003",
+      "name": "Spatial query acceleration",
+      "status": "hypothesis"
+    }
+  ],
+  "experiments": [],
+  "promoted_components": []
+}
