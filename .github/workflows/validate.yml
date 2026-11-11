@@ -1,0 +1,19 @@
+name: Validate research contracts
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate registry
+        run: python tools/validate_registry.py
+      - name: Test registry invariants
+        run: python -m unittest discover -s tests -v
