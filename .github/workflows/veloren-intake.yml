@@ -1,0 +1,26 @@
+name: Veloren source intake
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Upstream Veloren branch, tag, or 40-character SHA'
+        required: true
+        default: 'master'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read-only Veloren metadata inspection
+        run: python tools/scavenge.py --ref "${{ inputs.ref }}" --output reports/veloren-intake.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: veloren-intake-evidence
+          path: reports/veloren-intake.json
+          retention-days: 30
