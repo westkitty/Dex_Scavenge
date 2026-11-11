@@ -18,7 +18,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Read-only Veloren metadata inspection
-        run: python tools/scavenge.py --ref "${{ inputs.ref }}" --output reports/veloren-intake.json
+        env:
+          UPSTREAM_REF: ${{ inputs.ref }}
+        run: python tools/scavenge.py --ref "$UPSTREAM_REF" --output reports/veloren-intake.json
       - uses: actions/upload-artifact@v4
         with:
           name: veloren-intake-evidence
