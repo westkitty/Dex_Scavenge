@@ -35,8 +35,10 @@
       "status": "experimental",
       "path": "experiments/exp-001-spatial-grid/",
       "correctness": "PASS",
-      "environment": "Node.js 22.16.0; Linux x86_64 pilot",
-      "adoption": "not authorized"
+      "environment": "Node.js 22.16.0 Linux x86_64 pilot; Node.js 26.13.0 Apple M4 arm64 pilot",
+      "adoption": "not authorized",
+      "cross_runtime_report": "experiments/exp-001-spatial-grid/CROSS_RUNTIME_REPORT.md",
+      "m1_status": "blocked - DEX scheduler capacity / memory warning"
     }
   ],
   "promoted_components": []
