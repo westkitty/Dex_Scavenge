@@ -1,0 +1,233 @@
+{
+  "experiment": "EXP-001",
+  "environment": {
+    "node": "v22.16.0",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "logical_cpus": 5,
+    "total_memory_bytes": 6248640512
+  },
+  "source_revision": "131d1193387861d35c74655662148f303c22c5b4",
+  "correctness": "PASS",
+  "protocol": {
+    "entities": [
+      384,
+      1536
+    ],
+    "churn": [
+      0.02,
+      0.7
+    ],
+    "distributions": [
+      "uniform",
+      "clustered"
+    ],
+    "queries_per_tick": 24,
+    "query_radii": [
+      16,
+      48,
+      128
+    ],
+    "warmup_ticks": 32,
+    "measured_ticks": 100,
+    "repeats": 3,
+    "includes": "position movement + index rebuild/maintenance + exact radius queries",
+    "max_wall_ms": 45000
+  },
+  "elapsed_wall_ms": 1214.520017,
+  "memory_before": {
+    "rss": 89972736,
+    "heapTotal": 12312576,
+    "heapUsed": 9938840,
+    "external": 9290115,
+    "arrayBuffers": 21879
+  },
+  "memory_after": {
+    "rss": 98168832,
+    "heapTotal": 29876224,
+    "heapUsed": 13827928,
+    "external": 16057715,
+    "arrayBuffers": 6789439
+  },
+  "raw_file_sha256": "b717a66d653090a2f95843875fefbfbf9b9dea1cdea5983f190382da6b676867",
+  "rows": [
+    {
+      "n": 384,
+      "churn": 0.02,
+      "distribution": "uniform",
+      "queries_per_tick": 24,
+      "total_p50_ms": {
+        "brute": 0.076857,
+        "rebuilt": 0.01933,
+        "incremental": 0.014483
+      },
+      "total_p95_ms": {
+        "brute": 0.146612,
+        "rebuilt": 0.093676,
+        "incremental": 0.12047
+      },
+      "total_p99_ms": {
+        "brute": 0.371873,
+        "rebuilt": 0.131037,
+        "incremental": 0.180505
+      },
+      "checksums_agree": true
+    },
+    {
+      "n": 384,
+      "churn": 0.02,
+      "distribution": "clustered",
+      "queries_per_tick": 24,
+      "total_p50_ms": {
+        "brute": 0.073712,
+        "rebuilt": 0.013439,
+        "incremental": 0.009513
+      },
+      "total_p95_ms": {
+        "brute": 0.22477,
+        "rebuilt": 0.03626,
+        "incremental": 0.016904
+      },
+      "total_p99_ms": {
+        "brute": 1.484937,
+        "rebuilt": 0.30835,
+        "incremental": 0.097717
+      },
+      "checksums_agree": true
+    },
+    {
+      "n": 384,
+      "churn": 0.7,
+      "distribution": "uniform",
+      "queries_per_tick": 24,
+      "total_p50_ms": {
+        "brute": 0.09404,
+        "rebuilt": 0.026965,
+        "incremental": 0.021846
+      },
+      "total_p95_ms": {
+        "brute": 0.483035,
+        "rebuilt": 0.051987,
+        "incremental": 0.069884
+      },
+      "total_p99_ms": {
+        "brute": 1.159212,
+        "rebuilt": 0.160243,
+        "incremental": 0.519039
+      },
+      "checksums_agree": true
+    },
+    {
+      "n": 384,
+      "churn": 0.7,
+      "distribution": "clustered",
+      "queries_per_tick": 24,
+      "total_p50_ms": {
+        "brute": 0.073997,
+        "rebuilt": 0.015216,
+        "incremental": 0.015237
+      },
+      "total_p95_ms": {
+        "brute": 0.194,
+        "rebuilt": 0.02979,
+        "incremental": 0.063295
+      },
+      "total_p99_ms": {
+        "brute": 0.397491,
+        "rebuilt": 0.076772,
+        "incremental": 0.255818
+      },
+      "checksums_agree": true
+    },
+    {
+      "n": 1536,
+      "churn": 0.02,
+      "distribution": "uniform",
+      "queries_per_tick": 24,
+      "total_p50_ms": {
+        "brute": 0.312161,
+        "rebuilt": 0.047985,
+        "incremental": 0.031981
+      },
+      "total_p95_ms": {
+        "brute": 1.29029,
+        "rebuilt": 0.107367,
+        "incremental": 0.086776
+      },
+      "total_p99_ms": {
+        "brute": 2.213739,
+        "rebuilt": 0.496301,
+        "incremental": 0.194154
+      },
+      "checksums_agree": true
+    },
+    {
+      "n": 1536,
+      "churn": 0.02,
+      "distribution": "clustered",
+      "queries_per_tick": 24,
+      "total_p50_ms": {
+        "brute": 0.302152,
+        "rebuilt": 0.042864,
+        "incremental": 0.026258
+      },
+      "total_p95_ms": {
+        "brute": 0.647719,
+        "rebuilt": 0.158467,
+        "incremental": 0.078801
+      },
+      "total_p99_ms": {
+        "brute": 1.317383,
+        "rebuilt": 0.356381,
+        "incremental": 0.181559
+      },
+      "checksums_agree": true
+    },
+    {
+      "n": 1536,
+      "churn": 0.7,
+      "distribution": "uniform",
+      "queries_per_tick": 24,
+      "total_p50_ms": {
+        "brute": 0.321994,
+        "rebuilt": 0.053799,
+        "incremental": 0.065494
+      },
+      "total_p95_ms": {
+        "brute": 0.829509,
+        "rebuilt": 0.124555,
+        "incremental": 0.132978
+      },
+      "total_p99_ms": {
+        "brute": 1.784553,
+        "rebuilt": 0.21627,
+        "incremental": 0.177777
+      },
+      "checksums_agree": true
+    },
+    {
+      "n": 1536,
+      "churn": 0.7,
+      "distribution": "clustered",
+      "queries_per_tick": 24,
+      "total_p50_ms": {
+        "brute": 0.308333,
+        "rebuilt": 0.048327,
+        "incremental": 0.046011
+      },
+      "total_p95_ms": {
+        "brute": 0.552135,
+        "rebuilt": 0.143835,
+        "incremental": 0.112557
+      },
+      "total_p99_ms": {
+        "brute": 4.284188,
+        "rebuilt": 0.669577,
+        "incremental": 0.21051
+      },
+      "checksums_agree": true
+    }
+  ],
+  "disclaimer": "No proof of zero allocations, GC frequency or portability to Apple Silicon. p99 per 100 ticks is low confidence."
+}

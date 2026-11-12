@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "specimen": "001-veloren",
+  "source_project": "https://gitlab.com/veloren/veloren",
+  "read_from": "official GitHub mirror https://github.com/veloren/veloren",
+  "source_commit": "131d1193387861d35c74655662148f303c22c5b4",
+  "committed_at_utc": "2026-11-10T13:04:35Z",
+  "retrieved_on": "2026-11-11",
+  "source_commit_url": "https://github.com/veloren/veloren/commit/131d1193387861d35c74655662148f303c22c5b4",
+  "canonical_gitlab_commit_url": "https://gitlab.com/veloren/veloren/-/commit/131d1193387861d35c74655662148f303c22c5b4",
+  "revision_verification": "Full commit returned from official GitHub mirror. GitLab API master response was stale and was not used to identify the chosen revision. Direct GitLab contents at this SHA not independently retrievable in this runtime.",
+  "license": "GPL-3.0-or-later (Cargo.toml line 35; license file GPLv3)",
+  "file_level_license_exceptions": "not exhaustively scanned",
+  "source_hash_type": "Git SHA-1 blob object ID from GitHub connector; not SHA-256",
+  "upstream_code_copied": false,
+  "files": [
+    {
+      "path": "Cargo.toml",
+      "git_blob_sha1": "a9cd7f5f9f2a1a900393cf99619088d3705593f9",
+      "lines": "35-35",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/Cargo.toml#L35-L35",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/Cargo.toml#L35-L35",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Workspace license declaration GPL-3.0-or-later",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha1": "58cf522ee916eb9d891886d770d169f3dbb01596",
+      "lines": "1-20",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/LICENSE#L1-L20",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/LICENSE#L1-L20",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Root GPLv3 license text",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "common/src/cached_spatial_grid.rs",
+      "git_blob_sha1": "d9ab40a36a49d459c2c028b99241ac4e459bd9bb",
+      "lines": "1-23",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/common/src/cached_spatial_grid.rs#L1-L23",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/common/src/cached_spatial_grid.rs#L1-L23",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Wrapper, 32/64 cell sizes, 8-radius cutoff, stale-position warning",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "common/src/util/mod.rs",
+      "git_blob_sha1": "ec660e927b50612e860f44fc566584892a8b4cfa",
+      "lines": "12-15,55-57",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/common/src/util/mod.rs#L12-L15",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/common/src/util/mod.rs#L12-L15",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Re-export and actual SpatialGrid module path",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "common/src/util/spatial_grid.rs",
+      "git_blob_sha1": "e417b9e6f19497a2f6f2cc2d5af6b91aa4f3baac",
+      "lines": "1-109",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/common/src/util/spatial_grid.rs#L1-L109",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/common/src/util/spatial_grid.rs#L1-L109",
+      "observed": "SOURCE_IMPLEMENTATION",
+      "supports": "Two HashMaps of Vec<Entity>, radius tiering, AABR search and clear",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "common/systems/src/phys/mod.rs",
+      "git_blob_sha1": "f7ff4734812d49c7e28150fbf1480ddc2e5e4811",
+      "lines": "1425-1449,1459-1484",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/common/systems/src/phys/mod.rs#L1425-L1449",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/common/systems/src/phys/mod.rs#L1425-L1449",
+      "observed": "SOURCE_IMPLEMENTATION",
+      "supports": "Clear-and-repopulate cached index after physics movement, other transient grids",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "server/src/sys/msg/gizmos.rs",
+      "git_blob_sha1": "a1e7559bb7fd9668da94c7e4fc48fd63fc631efc",
+      "lines": "20-24,194-204",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/server/src/sys/msg/gizmos.rs#L20-L24",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/server/src/sys/msg/gizmos.rs#L20-L24",
+      "observed": "SOURCE_IMPLEMENTATION",
+      "supports": "Actual downstream CachedSpatialGrid query consumer",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "rtsim/src/data/actor.rs",
+      "git_blob_sha1": "081dde9e066d3ef80a4c18451227b25a2909d842",
+      "lines": "43-66,273-342,776-785",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/data/actor.rs#L43-L66",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/data/actor.rs#L43-L66",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "ActorMode, ActorKind, PathingMemory, actor collection declarations",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "rtsim/src/rule/simulate_npcs.rs",
+      "git_blob_sha1": "dc8a73554bcaac43ba5ee3965f45a18c7b42e713",
+      "lines": "128-141",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/rule/simulate_npcs.rs#L128-L141",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/rule/simulate_npcs.rs#L128-L141",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Simulated and loaded NPC branch conditions",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "rtsim/src/rule/sync_npcs.rs",
+      "git_blob_sha1": "debec789637a394cb31a7ef7e1c7c9a7289d20e8",
+      "lines": "126-147",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/rule/sync_npcs.rs#L126-L147",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/rule/sync_npcs.rs#L126-L147",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Actor grid cell maintenance; full lifecycle not verified",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "rtsim/src/rule/npc_ai/mod.rs",
+      "git_blob_sha1": "3060e563b024a191dd35fde0153e7abeafd904a9",
+      "lines": "97-99,109-180",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/rule/npc_ai/mod.rs#L97-L99",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/rule/npc_ai/mod.rs#L97-L99",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Background NPC tick decimation constant is 10 in this revision",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "rtsim/src/ai/mod.rs",
+      "git_blob_sha1": "25df4641c5128fdfd4d8c80cdd11ef4410ab8a3d",
+      "lines": "150-170,986-1010",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/ai/mod.rs#L150-L170",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/rtsim/src/ai/mod.rs#L150-L170",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Action trait and resumable Sequence declaration",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "common/src/uid.rs",
+      "git_blob_sha1": "156c0ef5d405bd03fd5eb99d57028b82d13570dd",
+      "lines": "10-65",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/common/src/uid.rs#L10-L65",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/common/src/uid.rs#L10-L65",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "UID allocator and IdMaps definitions",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "common/net/src/sync/track.rs",
+      "git_blob_sha1": "0033611c50f5692fdbc5de311eddaae6ef184e9a",
+      "lines": "10-62,100-125",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/common/net/src/sync/track.rs#L10-L62",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/common/net/src/sync/track.rs#L10-L62",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "Inserted/modified/removed bitsets and package assembly",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "server/src/presence.rs",
+      "git_blob_sha1": "a20708bd808399d4ba82a10d74ec15aaee04e4d3",
+      "lines": "7-14",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/server/src/presence.rs#L7-L14",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/server/src/presence.rs#L7-L14",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "CHUNK_FUZZ=2, REGION_FUZZ=16 declaration",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "world/src/util/random.rs",
+      "git_blob_sha1": "10a0cf126b046355bfa872517b21c3514e5d7ffa",
+      "lines": "54-79",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/world/src/util/random.rs#L54-L79",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/world/src/util/random.rs#L54-L79",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "RandomPerm declaration; not yet proven to be coordinate-hashed",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    },
+    {
+      "path": "world/src/sim/mod.rs",
+      "git_blob_sha1": "ce30bf4fbe4c0299146b6ebe6cc7a7065e0ce108",
+      "lines": "98-105,1680-1688",
+      "mirror_permalink": "https://github.com/veloren/veloren/blob/131d1193387861d35c74655662148f303c22c5b4/world/src/sim/mod.rs#L98-L105",
+      "gitlab_permalink": "https://gitlab.com/veloren/veloren/-/blob/131d1193387861d35c74655662148f303c22c5b4/world/src/sim/mod.rs#L98-L105",
+      "observed": "DECLARATION_OR_NARROW_SECTION",
+      "supports": "GenCdf exists; quantile guarantees unmeasured",
+      "does_not_prove": "Runtime allocation rates, benchmark performance, downstream TypeScript suitability or behavior beyond cited lines."
+    }
+  ]
+}

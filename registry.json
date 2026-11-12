@@ -6,8 +6,8 @@
       "id": "001",
       "name": "Veloren",
       "source": "https://gitlab.com/veloren/veloren",
-      "commit": null,
-      "status": "candidate"
+      "commit": "131d1193387861d35c74655662148f303c22c5b4",
+      "status": "experimental"
     }
   ],
   "patterns": [
@@ -24,9 +24,20 @@
     {
       "id": "OSEE-PAT-003",
       "name": "Spatial query acceleration",
-      "status": "hypothesis"
+      "status": "experimental",
+      "source_dossier": "patterns/OSEE-PAT-003-CACHED-SPATIAL-GRID.md"
     }
   ],
-  "experiments": [],
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "name": "Spatial grid rebuild vs incremental vs scan",
+      "status": "experimental",
+      "path": "experiments/exp-001-spatial-grid/",
+      "correctness": "PASS",
+      "environment": "Node.js 22.16.0; Linux x86_64 pilot",
+      "adoption": "not authorized"
+    }
+  ],
   "promoted_components": []
 }
