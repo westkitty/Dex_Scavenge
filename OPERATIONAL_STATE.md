@@ -1,7 +1,7 @@
 # OPERATIONAL_STATE — Dex//Scavenge
 project_id: westkitty/Dex_Scavenge
 status: current-baseline / EXP-001 experimental
-revision: 1
+revision: 2
 date: 2026-11-11
 
 ## Protected purpose
@@ -18,7 +18,9 @@ Reusable source-backed engineering knowledge. Not a code-copying program, game-e
 
 ## Unverified or blocked
 - M1/M4 and JavaScriptCore performance, zero-allocation claims, GitLab same-revision direct read, deep file-license exceptions, benchmark portability, user downstream integration.
-- GitHub remote commit and Drive ledger append need explicit post-write readback, not assumed.
+- GitHub branch source/experiment commit 499ab6221c277597ba30c22af0c5883b5ecd2778 verified by remote blob SHA readbacks; GitHub Actions Python validation success (run 43147806187).
+- Dedicated Google Drive ledger append VEL-20261111-001 verified by document text readback and parent folder ID 1XiFfXUPNO8RZR2ou4cTlKFMJNdIViI_H.
+- TypeScript test/strict compile and second Linux benchmark run passed. Apple M1/M4 and raw per-tick sampling remain unverified.
 
 ## Nonregression guards
 - Keep existing README/pipeline/governance/validator/test/workflows unchanged.
